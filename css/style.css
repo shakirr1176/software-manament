@@ -12,6 +12,7 @@
     --cus-danger: #FF0000;
     --cus-pink: #F75151;
     --cus-indigo: #41B9FD;
+    --cus-gray-50: #8E8E8E;
     
     --ideal-screen-width: 1920;
     --ideal-screen-height: 1080;
@@ -145,10 +146,6 @@ button{
   border: none;
 }
 
-.my-box{
-  /* padding: 2.60% 2.40%; */
-}
-
 .cus-border{
   box-shadow: 0 0 2px var(--cus-gray-20);
 }
@@ -223,6 +220,9 @@ button{
   .cus-black-70-text{
     color: var(--cus-black-70)
   }
+  .cus-gray-50-text{
+    color: var(--cus-gray-50)
+  }
   .cus-white-90-text{
     color: var(--cus-white-90)
   }
@@ -248,6 +248,13 @@ button{
 
 .border-b-gray{
   border-bottom: 1px solid var(--cus-gray-20)
+}
+.border-t-gray{
+  border-top: 1px solid var(--cus-gray-20)
+}
+
+.border-r-gray{
+  border-right: 1px solid var(--cus-gray-20)
 }
 
   /* progress bar start */
@@ -410,10 +417,56 @@ button{
   background-color: var(--cus-gray-100);
 }
 
-.green-dot{
+.dot{
   border-radius: 50%;
-  background: var(--cus-green);
+  background: var(--cus-orange);
   display: block;
 }
 
+.dot.active{
+  background: var(--cus-green);
+}
 
+.tingir tr.active{
+  background: var(--cus-green);
+  color: var(--cus-black-80);
+  font-weight: bold;
+}
+
+.liquid{
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  bottom: 33%;
+  left: 10%;
+  border: 1.5px solid var(--cus-gray-100);
+}
+
+.liquid-number{
+  position: absolute;
+  width: 15%;
+  top: 10%;
+  bottom: 33%;
+  right: 30%;
+  color: var(--cus-gray-100);
+  font-weight: bold;
+}
+
+.liquid > div{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: var(--cus-blue);
+}
+
+.liquid-dot-1,.liquid-dot-2{
+  position: absolute;
+  right: 28%;
+}
+.liquid-dot-1{
+  top: 37%;
+}
+.liquid-dot-2{
+  top: 50%;
+}
