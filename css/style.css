@@ -12,8 +12,7 @@
     --cus-danger: #FF0000;
     --cus-pink: #F75151;
     --cus-indigo: #41B9FD;
-    --cus-radius: 10px;
-    --grid-radius: 10px;
+    
     --ideal-screen-width: 1920;
     --ideal-screen-height: 1080;
 
@@ -118,6 +117,12 @@
     left: calc( (970 / var(--ideal-screen-width)) * 100% );
   }
 
+  .grid-box{
+    background: var(--cus-black-80);
+    border-radius: var(--grid-radius);
+    height: 100%;
+  }
+
   html{
     background: var(--dark-black);
   }
@@ -145,7 +150,7 @@ button{
 }
 
 .cus-border{
-  border: 1px solid var(--cus-gray-20);
+  box-shadow: 0 0 2px var(--cus-gray-20);
 }
 
 .flex-1{
@@ -244,9 +249,6 @@ button{
 .border-b-gray{
   border-bottom: 1px solid var(--cus-gray-20)
 }
-  .cus-radius{
-    border-radius: var(--cus-radius);
-  }
 
   /* progress bar start */
   .bar{
@@ -267,7 +269,7 @@ button{
 
   .cus-progress-bar > div{
     width: calc(100% / ((var(--bar-column) - 1) + var(--bar-column)));
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     z-index: 10;
   }
@@ -300,11 +302,9 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 120px;
     position: relative;
     z-index: 0;
     background: var(--bar-color);
-    margin: 20px 0;
   }
 
   .cus-progress-bar > div:nth-child(1)::after{
@@ -353,26 +353,10 @@ button{
 
 /* progress bar end */
 /* text-whiteh-100% */
-.grid-box{
-  background: var(--cus-black-80);
-  border-radius: var(--grid-radius);
-  padding: 16px;
-  height: 100%;
-}
-
-.field-radious{
-  border-radius: 16px;
-}
 
 .round-field,.bar-rounded-field,.progress-bar-field{
   display: block;
   background: var(--dark-black);
-  padding: 6px 24px;
-  border-radius: 16px;
-}
-
-.bar-rounded-field,.progress-bar-field{
-  padding: 6px 10px !important;
 }
 
 .combined.active{
@@ -384,21 +368,14 @@ button{
 }
 
 .menu{
-  border-radius: var(--cus-radius);
   background: var(--cus-white-90);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-}
-
-.menu > svg{
-  width: 30px;
 }
 
 .progress-bar-field{
-  margin-top: 6px;
   font-weight: lighter;
   text-align: center;
   border-radius: var(--grid-radius);
@@ -407,11 +384,10 @@ button{
 /* automatic time zone */
 
 .automatic-time > .clock{
-  width: 30px;
   color: var(--cus-gray-100);
 }
 
-.agua{
+.agua,.amostra{
   height: 56px;
   width: 14px;
   border-radius: 1000px;
@@ -421,7 +397,7 @@ button{
   overflow: hidden;
 }
 
-.agua > div{
+.agua > div,.amostra > div{
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -430,5 +406,14 @@ button{
   border-bottom-right-radius: 1000px;
 }
 
+.amostra > div{
+  background-color: var(--cus-gray-100);
+}
+
+.green-dot{
+  border-radius: 50%;
+  background: var(--cus-green);
+  display: block;
+}
 
 

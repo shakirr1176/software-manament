@@ -3,23 +3,23 @@
 }
 
 .font-xs{
-    font-size: 8px;
+    font-size: 0.5vmax;
 }
 
 .font-sm {
-    font-size: 9px;
+    font-size: calc(var(--ratio) * 0.8vw);
 }
 
 .font-normal {
-    font-size: 10px;
+    font-size: calc(var(--ratio) * 0.9vw);
 }
 
 .font-medium {
-    font-size: 14px;
+    font-size: calc(var(--ratio) * 1.2vw);
 }
 
 .font-big {
-    font-size: 16px;
+    font-size: calc(var(--ratio) * 1.3vw);
 }
 
 .font-bigger {
@@ -27,80 +27,7 @@
 }
 
 .font-ext-bigger {
-    font-size: 20px;
-}
-
-/* sm */
-@media only screen and (min-width: 640px) {
-
-}
-
-/* md */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* lg */
-@media only screen and (min-width: 1024px) {
-
-}
-
-/* xl */
-@media only screen and (min-width: 1280px) {
-    .font-tiny{
-        font-size: 7px;
-    }
-    .font-xs{
-        font-size: 8px;
-    }
-    .font-sm {
-        font-size: 9px;
-    }
-    .font-normal {
-        font-size: 12px;
-    }
-
-    .font-medium {
-        font-size: 16px;
-    }
-
-    .font-big {
-        font-size: 20px;
-    }
-    .font-bigger {
-        font-size: 20px;
-    }
-    .font-ext-bigger {
-        font-size: 24px;
-    }
-}
-
-/* 2xl */
-@media only screen and (min-width: 1536px) {
-    .font-tiny{
-        font-size: 10px;
-    }
-
-    .font-xs{
-        font-size: 12px;
-    }
-    .font-sm {
-        font-size: 13px;
-    }
-    .font-normal {
-        font-size: 15px;
-    }
-    .font-medium {
-        font-size: 18px;
-    }
-    .font-big {
-        font-size: 22px;
-    }
-    .font-bigger {
-        font-size: 24px;
-      }
-    .font-ext-bigger {
-        font-size: 34px;
-    }
+    font-size: calc(var(--ratio) * 2vw);
+    line-height: 1.1;
 }
 
