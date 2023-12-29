@@ -1,151 +1,133 @@
-
-.font-tiny{
-    font-size: 7px;
-}
-
-.font-xs{
-    font-size: 0.5vmax;
-}
-
 .font-sm {
     font-size: calc(var(--ratio) * 0.8vw);
 }
-
 .font-normal {
     font-size: calc(var(--ratio) * 0.9vw);
 }
-
 .font-medium {
     font-size: calc(var(--ratio) * 1.2vw);
 }
-
 .font-big {
     font-size: calc(var(--ratio) * 1.3vw);
 }
-
-.font-bigger {
-    font-size: 18px;
-}
-
 .font-ext-bigger {
     font-size: calc(var(--ratio) * 2vw);
-    line-height: 1.1;
 }
 
 .pad-20{
-    padding: calc((20px / var(--ideal-screen-width) * var(--page-wide)))
+    padding: calc((20px * var(--page-wide)))
 }
 .w-286{
-    width: calc((286px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((286px * var(--page-wide)));
 }
 .w-45{
-    width: calc((45px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((45px * var(--page-wide)));
 }
 .w-30{
-    width: calc((30px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((30px * var(--page-wide)));
 }
 .w-14{
-    width: calc((14px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((14px * var(--page-wide)));
 }
 .w-30{
-    width: calc((30px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((30px * var(--page-wide)));
 }
 .h-30{
-    height: calc((30px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((30px * var(--page-wide)));
 }
 .w-40{
-    width: calc((40px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((40px * var(--page-wide)));
 }
 .h-40{
-    width: calc((40px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((40px * var(--page-wide)));
 }
 .h-14{
-    height: calc((14px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((14px * var(--page-wide)));
 }
 .h-40{
-    height: calc((40px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((40px * var(--page-wide)));
 }
 .w-14{
-    width: calc((14px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((14px * var(--page-wide)));
 }
 .w-18{
-    width: calc((18px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((18px * var(--page-wide)));
 }
 .h-18{
-    height: calc((18px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((18px * var(--page-wide)));
 }
 .w-153{
-    width: calc((153px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((153px * var(--page-wide)));
 }
 .w-124{
-    width: calc((124px / var(--ideal-screen-width) * var(--page-wide)));
+    width: calc((124px * var(--page-wide)));
 }
 .h-213{
-    height: calc((213px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((213px * var(--page-wide)));
 }
 .h-56{
-    height: calc((56px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((56px * var(--page-wide)));
 }
 .h-120{
-    height: calc((120px / var(--ideal-screen-width) * var(--page-wide)));
+    height: calc((120px * var(--page-wide)));
 }
 .rad-20{
-    border-radius : calc((20px / var(--ideal-screen-width) * var(--page-wide)))
+    border-radius : calc((20px * var(--page-wide)))
 }
 .rad-6{
-    border-radius : calc((6px / var(--ideal-screen-width) * var(--page-wide)))
+    border-radius : calc((6px * var(--page-wide)))
 }
 .pad-y-8{
-  padding-top: calc((8px / var(--ideal-screen-width) * var(--page-wide)));
-  padding-bottom: calc((8px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-top: calc((8px * var(--page-wide)));
+  padding-bottom: calc((8px * var(--page-wide)));
 }
 .pad-y-6{
-  padding-top: calc((6px / var(--ideal-screen-width) * var(--page-wide)));
-  padding-bottom: calc((6px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-top: calc((6px * var(--page-wide)));
+  padding-bottom: calc((6px * var(--page-wide)));
 }
 .pad-y-4{
-  padding-top: calc((4px / var(--ideal-screen-width) * var(--page-wide)));
-  padding-bottom: calc((4px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-top: calc((4px * var(--page-wide)));
+  padding-bottom: calc((4px * var(--page-wide)));
 }
 .pad-x-24{
-  padding-left: calc((24px / var(--ideal-screen-width) * var(--page-wide)));
-  padding-right: calc((24px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-left: calc((24px * var(--page-wide)));
+  padding-right: calc((24px * var(--page-wide)));
 }
 .pad-b-12{
-  padding-bottom: calc((12px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-bottom: calc((12px * var(--page-wide)));
 }
 .pad-b-8{
-  padding-bottom: calc((8px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-bottom: calc((8px * var(--page-wide)));
 }
 .pad-b-18{
-  padding-bottom: calc((18px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-bottom: calc((18px * var(--page-wide)));
 }
 .pad-r-18{
-  padding-right: calc((18px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-right: calc((18px * var(--page-wide)));
 }
 .mar-r-18{
-  margin-right: calc((18px / var(--ideal-screen-width) * var(--page-wide)));
+  margin-right: calc((18px * var(--page-wide)));
 }
 .pad-r-14{
-  padding-right: calc((14px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-right: calc((14px * var(--page-wide)));
 }
 .pad-r-22{
-  padding-right: calc((22px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-right: calc((22px * var(--page-wide)));
 }
 .pad-l-12{
-  padding-left: calc((12px / var(--ideal-screen-width) * var(--page-wide)));
+  padding-left: calc((12px * var(--page-wide)));
 }
 .mar-t-8{
-    margin-top: calc((8px / var(--ideal-screen-width) * var(--page-wide)))
+    margin-top: calc((8px * var(--page-wide)))
 }
 .pad-x-40{
-    padding-left: calc((40px / var(--ideal-screen-width) * var(--page-wide)));
-    padding-right: calc((40px / var(--ideal-screen-width) * var(--page-wide)));
+    padding-left: calc((40px * var(--page-wide)));
+    padding-right: calc((40px * var(--page-wide)));
 }
 .pad-x-12{
-    padding-left: calc((12px / var(--ideal-screen-width) * var(--page-wide)));
-    padding-right: calc((12px / var(--ideal-screen-width) * var(--page-wide)));
+    padding-left: calc((12px * var(--page-wide)));
+    padding-right: calc((12px * var(--page-wide)));
 }
 .mar-t-30{
-    margin-top: calc((30px / var(--ideal-screen-width) * var(--page-wide)))
+    margin-top: calc((30px * var(--page-wide)))
 }

@@ -17,8 +17,9 @@
     --ideal-screen-width: 1920;
     --ideal-screen-height: 1080;
 
+
     --default-bar-color: #393e44;
-    --bar-color: linear-gradient(to right, var(--cus-green), var(--cus-pink));
+    --bar-color: linear-gradient(to right, var(--cus-green), var(--cus-danger));
     --bar-column: 7;
 
     --value-1: calc(100% - (1 * 100% / var(--bar-column)));
@@ -288,7 +289,7 @@ button{
     left: 0;
     right: 0;
     /* width: 100%; */
-    width: calc(100% + 2px);
+    width: calc(100% + 4%);
     height: 80%;
     background-color: var(--cus-black-80);
   }
@@ -299,7 +300,8 @@ button{
     top: 0;
     left: 0;
     transform: translateX(100%);
-    width: calc(100% + 1px);
+    /* width: 100%; */
+    width: calc(100% + 4%);
     height: 100%;
     background: var(--cus-black-80);
   }
@@ -359,8 +361,6 @@ button{
 }
 
 /* progress bar end */
-/* text-whiteh-100% */
-
 .round-field,.bar-rounded-field,.progress-bar-field{
   display: block;
   background: var(--dark-black);
@@ -380,6 +380,11 @@ button{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 300ms linear;
+}
+
+.menu:hover{
+  background: var(--cus-gray-50);
 }
 
 .progress-bar-field{
@@ -411,6 +416,7 @@ button{
   background-color: var(--cus-blue);
   border-bottom-left-radius: 1000px;
   border-bottom-right-radius: 1000px;
+  transition: all 300ms linear;
 }
 
 .amostra > div{
@@ -419,12 +425,11 @@ button{
 
 .dot{
   border-radius: 50%;
-  background: var(--cus-orange);
   display: block;
 }
 
-.dot.active{
-  background: var(--cus-green);
+.dot.inactive{
+  background: var(--cus-gray-100);
 }
 
 .tingir tr.active{
@@ -458,6 +463,7 @@ button{
   width: 100%;
   left: 0;
   background: var(--cus-blue);
+  transition: all 300ms linear;
 }
 
 .liquid-dot-1,.liquid-dot-2{
