@@ -18,13 +18,13 @@
   <div class="fit-screen" style="position: relative;">
     <div class="my-box" style="inset: 0; position:absolute;">
       <!-- header start -->
-      <div class="position-absolute overflow-hidden automatic-grid-1">
+      <div class="position-absolute overflow-hidden header-grid-1">
         <div class="rad-20 pad-20 grid-box text-white h-100">
           <h1 class="font-ext-bigger fw-bolder">Máquina</h1>
           <p class="font-ext-bigger fw-light">xxxx</p>
         </div>
     </div>
-    <div class="position-absolute overflow-hidden automatic-grid-2">
+    <div class="position-absolute overflow-hidden header-grid-2">
       <div class="rad-20 pad-20 grid-box">
         <ul class="d-flex align-items-center cus-white-90-text pad-b-12">
           <li class="d-flex align-items-center pad-r-22">
@@ -87,7 +87,7 @@
         </div>
       </div>
     </div>
-    <div class="position-absolute overflow-hidden automatic-grid-3">
+    <div class="position-absolute overflow-hidden header-grid-3">
       <button class="rad-20 menu w-100 h-100">
         <svg class="w-45" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -105,7 +105,7 @@
       </div>
       <div class="position-absolute overflow-hidden automatic-grid-5">
           <div class="d-flex flex-column justify-content-between rad-20 pad-20 grid-box overflow-hidden h-100">
-              <div style="margin-top: 10%;" class="progress-4 cus-progress-bar">
+              <div style="margin-top: 15%;" class="progress-6 cus-progress-bar">
                 <div class="h-120"></div>
                 <div class="h-120"></div>
                 <div class="h-120"></div>
@@ -242,7 +242,7 @@
                   <div class="d-flex  align-items-center">
                     <div class="d-flex align-items-center pad-r-22">
                       <label for="" class="font-normal text-capitalize pad-r-14 fw-semibold">
-                        <img class="w-30 h-30" src="./assets/images/icon _refresh cw_.svg" alt="">
+                        <img class="w-20" src="./assets/images/icon _refresh cw_.svg" alt="">
                       </label>
                       <span class="font-medium d-block dark-black-bg pad-x-24 pad-y-8 rad-20 fw-semibold cus-white-90-text">
                         1950
@@ -398,8 +398,8 @@
       </div>
       <div class="position-absolute overflow-hidden automatic-grid-11">
         <div class="d-flex align-items-start rad-20 pad-20 grid-box automatic-time">
-            <div style="width: 70%;">
-                <div class="d-flex align-items-center">
+            <div style="width: 70%; padding-right: 2%;">
+                <div style="padding-bottom: 2%;" class="border-b-gray d-flex align-items-center">
                   <div class="d-flex align-items-center">
                       <img class="w-30 h-30 mar-r-18" src="./assets/images/jar.svg" alt="">
                     <span class="d-flex font-medium text-uppercase cus-white-90-text fw-semibold">PReparação</span>
@@ -409,19 +409,50 @@
                       </span>
                     </div>
                   </div>
-                  <ul>
-                    <li class="d-flex align-items-center">
+                  <ul class="flex-1">
+                    <li class="d-flex align-items-center justify-content-end">
                       <span class="font-normal cus-white-90-text mar-r-18">Cozinhas</span>
                       <span class="dot cus-orange-bg w-14 h-14"></span>
                     </li>
-                    <li class="d-flex align-items-center">
-                      <span class="font-normal cus-white-90-text mar-r-18">Cozinhas</span>
+                    <li class="d-flex align-items-center justify-content-end">
+                      <span class="font-normal cus-white-90-text mar-r-18">Confirmação</span>
                       <span class="dot cus-orange-bg w-14 h-14"></span>
                     </li>
                   </ul>
                 </div>
-                <div>
-
+                <div style="margin-top: 1.5%;" class="h-158 overflow-scroll customScroll-y rad-20 dark-black-bg">
+                  <table class="border-table font-sm w-100">
+                    <thead>
+                      <tr class="border-b-gray">
+                        <th  class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Produto</th>
+                        <th class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Gramas</th>
+                      </tr>
+                    </thead>
+                    <tbody class="cus-white-90-text">
+                      <tr class="border-b-gray">
+                        <td class="border-r-gray pad-x-24 pad-y-8">Buffer R11</td>
+                        <td class="border-r-gray pad-x-24 pad-y-8">4620</td>
+                      </tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div style="margin-top: 1.5%;" class="h-135 overflow-scroll customScroll-y rad-20 dark-black-bg">
+                  <table class="border-table font-sm w-100">
+                    <thead>
+                      <tr class="border-b-gray">
+                        <th class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Produto</th>
+                        <th class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Gramas</th>
+                        <th class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Gramas</th>
+                        <th class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Gramas</th>
+                        <th class="border-r-gray border-b-gray cus-white-90-text fw-light pad-x-24 pad-y-8">Gramas</th>
+                      </tr>
+                    </thead>
+                    <tbody class="cus-white-90-text">
+                     
+                      <tr></tr>
+                    </tbody>
+                  </table>
                 </div>
             </div>
             <div style="width: 30%; padding-top:3%;" class="d-flex justify-content-between">

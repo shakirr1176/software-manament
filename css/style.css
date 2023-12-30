@@ -9,115 +9,160 @@
     --cus-white-90: #E6E6E6;
     --cus-gray-100: #838F9B;
     --cus-gray-20: #838f9b4b;
+    --cus-gray-30: #303030;
     --cus-danger: #FF0000;
     --cus-pink: #F75151;
     --cus-indigo: #41B9FD;
     --cus-gray-50: #8E8E8E;
     
-    --ideal-screen-width: 1920;
-    --ideal-screen-height: 1080;
-
+    --isw: 1920;
+    --ish: 1080;
 
     --default-bar-color: #393e44;
-    --bar-color: linear-gradient(to right, var(--cus-green), var(--cus-danger));
-    --bar-column: 7;
+    --bar-color: linear-gradient(to right, var(--cus-green), var(--cus-pink));
+    --bar-col: 7;
 
-    --value-1: calc(100% - (1 * 100% / var(--bar-column)));
-    --value-2: calc(100% - (2 * 100% / var(--bar-column)));
-    --value-3: calc(100% - (3 * 100% / var(--bar-column)));
-    --value-4: calc(100% - (4 * 100% / var(--bar-column)));
-    --value-5: calc(100% - (5 * 100% / var(--bar-column)));
-    --value-6: calc(100% - (6 * 100% / var(--bar-column)));
-    --value-7: calc(100% - (7 * 100% / var(--bar-column)));
+    --value-1: calc(100% - (1 * 100% / var(--bar-col)));
+    --value-2: calc(100% - (2 * 100% / var(--bar-col)));
+    --value-3: calc(100% - (3 * 100% / var(--bar-col)));
+    --value-4: calc(100% - (4 * 100% / var(--bar-col)));
+    --value-5: calc(100% - (5 * 100% / var(--bar-col)));
+    --value-6: calc(100% - (6 * 100% / var(--bar-col)));
+    --value-7: calc(100% - (7 * 100% / var(--bar-col)));
   }
 
   .footer{
     width: 100vw;
-    height: calc( (120 / var(--ideal-screen-height)) * 100% );
-    top: calc( (960 / var(--ideal-screen-height)) * 100% );
+    height: calc( (120 / var(--ish)) * 100% );
+    top: calc( (960 / var(--ish)) * 100% );
     left: 50%;
     transform: translateX(-50%);
   }
 
   .footer-grid{
-    width: calc( (1820 / var(--ideal-screen-width)) * 100% );
-    height: calc( (120 / var(--ideal-screen-height)) * 100% );
-    top: calc( (960 / var(--ideal-screen-height)) * 100% );
+    width: calc( (1820 / var(--isw)) * 100% );
+    height: calc( (120 / var(--ish)) * 100% );
+    top: calc( (960 / var(--ish)) * 100% );
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .automatic-grid-1{
-    width: calc( (287 / var(--ideal-screen-width)) * 100% );
-    height: calc( (146 / var(--ideal-screen-height)) * 100% );
-    top: calc( (26 / var(--ideal-screen-height)) * 100% );
-    left: calc( (50 / var(--ideal-screen-width)) * 100% );
+  .header-grid-1{
+    width: calc( (287 / var(--isw)) * 100% );
+    height: calc( (146 / var(--ish)) * 100% );
+    top: calc( (26 / var(--ish)) * 100% );
+    left: calc( (50 / var(--isw)) * 100% );
   }
 
-  .automatic-grid-2{
-    width: calc( (1360 / var(--ideal-screen-width)) * 100% );
-    height: calc( (146 / var(--ideal-screen-height)) * 100% );
-    top: calc( (26 / var(--ideal-screen-height)) * 100% );
-    left: calc( (357 / var(--ideal-screen-width)) * 100% );
+  .header-grid-2{
+    width: calc( (1360 / var(--isw)) * 100% );
+    height: calc( (146 / var(--ish)) * 100% );
+    top: calc( (26 / var(--ish)) * 100% );
+    left: calc( (357 / var(--isw)) * 100% );
   }
 
-  .automatic-grid-3{
-    width: calc( (133 / var(--ideal-screen-width)) * 100% );
-    height: calc( (146 / var(--ideal-screen-height)) * 100% );
-    top: calc( (26 / var(--ideal-screen-height)) * 100% );
-    left: calc( (1737 / var(--ideal-screen-width)) * 100% );
+  .header-grid-3{
+    width: calc( (133 / var(--isw)) * 100% );
+    height: calc( (146 / var(--ish)) * 100% );
+    top: calc( (26 / var(--ish)) * 100% );
+    left: calc( (1737 / var(--isw)) * 100% );
   }
 
   .automatic-grid-4{
-    width: calc( (593 / var(--ideal-screen-width)) * 100% );
-    height: calc( (399 / var(--ideal-screen-height)) * 100% );
-    top: calc( (192 / var(--ideal-screen-height)) * 100% );
-    left: calc( (50 / var(--ideal-screen-width)) * 100% );
+    width: calc( (593 / var(--isw)) * 100% );
+    height: calc( (399 / var(--ish)) * 100% );
+    top: calc( (192 / var(--ish)) * 100% );
+    left: calc( (50 / var(--isw)) * 100% );
   }
 
   .automatic-grid-5{
-    width: calc( (287 / var(--ideal-screen-width)) * 100% );
-    height: calc( (399 / var(--ideal-screen-height)) * 100% );
-    top: calc( (192 / var(--ideal-screen-height)) * 100% );
-    left: calc( (663 / var(--ideal-screen-width)) * 100% );
+    width: calc( (287 / var(--isw)) * 100% );
+    height: calc( (399 / var(--ish)) * 100% );
+    top: calc( (192 / var(--ish)) * 100% );
+    left: calc( (663 / var(--isw)) * 100% );
   }
 
   .automatic-grid-6{
-    width: calc( (900 / var(--ideal-screen-width)) * 100% );
-    height: calc( (98 / var(--ideal-screen-height)) * 100% );
-    top: calc( (192 / var(--ideal-screen-height)) * 100% );
-    left: calc( (971 / var(--ideal-screen-width)) * 100% );
+    width: calc( (900 / var(--isw)) * 100% );
+    height: calc( (98 / var(--ish)) * 100% );
+    top: calc( (192 / var(--ish)) * 100% );
+    left: calc( (971 / var(--isw)) * 100% );
   }
   .automatic-grid-7{
-    width: calc( (900 / var(--ideal-screen-width)) * 100% );
-    height: calc((98 / var(--ideal-screen-height)) * 100% );
-    top: calc( (310 / var(--ideal-screen-height)) * 100% );
-    left: calc( (971 / var(--ideal-screen-width)) * 100% );
+    width: calc( (900 / var(--isw)) * 100% );
+    height: calc((98 / var(--ish)) * 100% );
+    top: calc( (310 / var(--ish)) * 100% );
+    left: calc( (971 / var(--isw)) * 100% );
   }
   .automatic-grid-8{
-    width: calc( (900 / var(--ideal-screen-width)) * 100% );
-    height: calc((77 / var(--ideal-screen-height)) * 100% );
-    top: calc( (427 / var(--ideal-screen-height)) * 100% );
-    left: calc( (971 / var(--ideal-screen-width)) * 100% );
+    width: calc( (900 / var(--isw)) * 100% );
+    height: calc((77 / var(--ish)) * 100% );
+    top: calc( (427 / var(--ish)) * 100% );
+    left: calc( (971 / var(--isw)) * 100% );
   }
   .automatic-grid-9{
-    width: calc( (593 / var(--ideal-screen-width)) * 100% );
-    height: calc((330 / var(--ideal-screen-height)) * 100% );
-    top: calc( (611 / var(--ideal-screen-height)) * 100% );
-    left: calc( (50 / var(--ideal-screen-width)) * 100% );
+    width: calc( (593 / var(--isw)) * 100% );
+    height: calc((330 / var(--ish)) * 100% );
+    top: calc( (611 / var(--ish)) * 100% );
+    left: calc( (50 / var(--isw)) * 100% );
   }
   .automatic-grid-10{
-    width: calc( (287 / var(--ideal-screen-width)) * 100% );
-    height: calc((330 / var(--ideal-screen-height)) * 100% );
-    top: calc( (611 / var(--ideal-screen-height)) * 100% );
-    left: calc( (662 / var(--ideal-screen-width)) * 100% );
+    width: calc( (287 / var(--isw)) * 100% );
+    height: calc((330 / var(--ish)) * 100% );
+    top: calc( (611 / var(--ish)) * 100% );
+    left: calc( (662 / var(--isw)) * 100% );
   }
   .automatic-grid-11{
-    width: calc( (900 / var(--ideal-screen-width)) * 100% );
-    height: calc((416 / var(--ideal-screen-height)) * 100% );
-    top: calc( (524 / var(--ideal-screen-height)) * 100% );
-    left: calc( (970 / var(--ideal-screen-width)) * 100% );
+    width: calc( (900 / var(--isw)) * 100% );
+    height: calc((416 / var(--ish)) * 100% );
+    top: calc( (524 / var(--ish)) * 100% );
+    left: calc( (970 / var(--isw)) * 100% );
   }
+  .manual-grid-4{
+    width: calc( (287 / var(--isw)) * 100% );
+    height: calc((308 / var(--ish)) * 100% );
+    top: calc( (192 / var(--ish)) * 100% );
+    left: calc( (50 / var(--isw)) * 100% );
+  }
+
+  .manual-grid-5{
+    width: calc( (287 / var(--isw)) * 100% );
+    height: calc((420 / var(--ish)) * 100% );
+    top: calc( (521 / var(--ish)) * 100% );
+    left: calc( (50 / var(--isw)) * 100% );
+  }
+  .manual-grid-6{
+    width: calc( (229 / var(--isw)) * 100% );
+    height: calc((749 / var(--ish)) * 100% );
+    top: calc( (192 / var(--ish)) * 100% );
+    left: calc( (357 / var(--isw)) * 100% );
+  }
+  .manual-grid-7{
+    width: calc( (1015 / var(--isw)) * 100% );
+    height: calc((98 / var(--ish)) * 100% );
+    top: calc( (191 / var(--ish)) * 100% );
+    left: calc( (606 / var(--isw)) * 100% );
+  }
+  .manual-grid-8{
+    width: calc( (652 / var(--isw)) * 100% );
+    height: calc((632 / var(--ish)) * 100% );
+    top: calc( (309 / var(--ish)) * 100% );
+    left: calc( (606 / var(--isw)) * 100% );
+  }
+  .manual-grid-9{
+    width: calc( (344 / var(--isw)) * 100% );
+    height: calc((632 / var(--ish)) * 100% );
+    top: calc( (309 / var(--ish)) * 100% );
+    left: calc( (1277 / var(--isw)) * 100% );
+  }
+  .manual-grid-10{
+    width: calc( (229 / var(--isw)) * 100% );
+    height: calc((749 / var(--ish)) * 100% );
+    top: calc( (192 / var(--ish)) * 100% );
+    left: calc( (1641 / var(--isw)) * 100% );
+  }
+
+
 
   .grid-box{
     background: var(--cus-black-80);
@@ -148,7 +193,8 @@ button{
 }
 
 .cus-border{
-  box-shadow: 0 0 2px var(--cus-gray-20);
+  /* box-shadow: 0 0 1px var(--cus-gray-50); */
+  border: 1px solid var(--cus-gray-100);
 }
 
 .flex-1{
@@ -248,14 +294,46 @@ button{
   }
 
 .border-b-gray{
-  border-bottom: 1px solid var(--cus-gray-20)
+  border-bottom: 1px solid var(--cus-gray-30)
 }
 .border-t-gray{
-  border-top: 1px solid var(--cus-gray-20)
+  border-top: 1px solid var(--cus-gray-30)
 }
 
 .border-r-gray{
-  border-right: 1px solid var(--cus-gray-20)
+  border-right: 1px solid var(--cus-gray-30)
+}
+
+.border-table th:last-child, .border-table td:last-child {
+  border-right: 0;
+}
+
+.border-table tr:last-child {
+  border-bottom: 0;
+}
+
+
+.customScroll-y::-webkit-scrollbar{
+  width: 4px;
+}
+.customScroll-y::-moz-scrollbar{
+  width: 4px;
+}
+
+.customScroll-y::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+.customScroll-y::-webkit-scrollbar-thumb{
+  background-color: #BDBEC7;
+  border-radius: 5px;
+}
+
+.customScroll-y::-moz-scrollbar-track{
+  background-color: transparent;
+}
+.customScroll-y::-moz-scrollbar-thumb{
+  background-color: #BDBEC7;
+  border-radius: 5px;
 }
 
   /* progress bar start */
@@ -276,8 +354,7 @@ button{
   }
 
   .cus-progress-bar > div{
-    width: calc(100% / ((var(--bar-column) - 1) + var(--bar-column)));
-    /* height: 100%; */
+    width: calc(100% / ((var(--bar-col) - 1) + var(--bar-col)));
     position: relative;
     z-index: 10;
   }
@@ -288,8 +365,7 @@ button{
     top: 0;
     left: 0;
     right: 0;
-    /* width: 100%; */
-    width: calc(100% + 4%);
+    width: 100%;
     height: 80%;
     background-color: var(--cus-black-80);
   }
@@ -298,10 +374,8 @@ button{
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translateX(100%);
-    /* width: 100%; */
-    width: calc(100% + 4%);
+    left: 100%;
+    width: 102%;
     height: 100%;
     background: var(--cus-black-80);
   }

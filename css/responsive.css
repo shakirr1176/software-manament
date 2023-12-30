@@ -26,6 +26,9 @@
 .w-30{
     width: calc((30px * var(--page-wide)));
 }
+.w-20{
+    width: calc((21px * var(--page-wide)));
+}
 .w-14{
     width: calc((14px * var(--page-wide)));
 }
@@ -62,6 +65,14 @@
 .w-124{
     width: calc((124px * var(--page-wide)));
 }
+
+.h-158{
+    height: calc((158px * var(--page-wide)));
+}
+.h-135{
+    height: calc((135px * var(--page-wide)));
+}
+
 .h-213{
     height: calc((213px * var(--page-wide)));
 }
