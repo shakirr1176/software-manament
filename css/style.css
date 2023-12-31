@@ -550,3 +550,23 @@ button{
 .liquid-dot-2{
   top: 50%;
 }
+
+.litro-nivel{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--cus-white-90);
+  /* transition: all 200ms linear; */
+  display: block;
+}
+
+.litro-nivel:hover{
+  background: var(--cus-orange);
+  color: white;
+}
+
+.litro-nivel.active{
+  background: var(--cus-orange);
+  color: white;
+}

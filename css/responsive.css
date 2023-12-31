@@ -5,9 +5,13 @@
     font-size: calc(var(--ratio) * 0.9vw);
 }
 .font-medium {
+    font-size: calc(var(--ratio) * 1vw);
+}
+
+.font-big {
     font-size: calc(var(--ratio) * 1.2vw);
 }
-.font-big {
+.font-bigger {
     font-size: calc(var(--ratio) * 1.3vw);
 }
 .font-ext-bigger {
@@ -55,6 +59,15 @@
 }
 .w-18{
     width: calc((18px * var(--page-wide)));
+}
+.w-27{
+    width: calc((27px * var(--page-wide)));
+}
+.h-23{
+    height: calc((23px * var(--page-wide)));
+}
+.w-22{
+    width: calc((22px * var(--page-wide)));
 }
 .h-18{
     height: calc((18px * var(--page-wide)));
@@ -122,6 +135,9 @@
 .pad-r-14{
   padding-right: calc((14px * var(--page-wide)));
 }
+.pad-r-10{
+  padding-right: calc((10px * var(--page-wide)));
+}
 .pad-r-22{
   padding-right: calc((22px * var(--page-wide)));
 }
@@ -138,6 +154,10 @@
 .pad-x-12{
     padding-left: calc((12px * var(--page-wide)));
     padding-right: calc((12px * var(--page-wide)));
+}
+.pad-x-20{
+    padding-left: calc((20px * var(--page-wide)));
+    padding-right: calc((20px * var(--page-wide)));
 }
 .mar-t-30{
     margin-top: calc((30px * var(--page-wide)))
