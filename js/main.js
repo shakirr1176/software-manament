@@ -1,11 +1,17 @@
 let litroNivel = document.querySelectorAll('.litro-nivel')
 
+let litroNivelActive = [...litroNivel].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(litroNivel)
+activeBtn(litroNivel,litroNivelActive)
 
-function activeBtn(btn){
+function activeBtn(btn,active){
     let prev;
-    btn.forEach(el=>{
+
+    if(active){
+        prev = active
+    }
+
+    btn?.forEach(el=>{
         el.addEventListener('click',()=>{
             if(prev){
                 prev.classList.remove('active')
@@ -20,3 +26,8 @@ function activeBtn(btn){
         })
     })
 }
+
+let circleIcon = document.querySelectorAll('.circle-icon')
+let circleIconActive = [...circleIcon].filter(el=>el.classList.contains('active'))[0]
+
+activeBtn(circleIcon,circleIconActive)

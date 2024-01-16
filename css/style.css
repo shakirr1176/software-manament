@@ -518,7 +518,6 @@ button{
   top: 5%;
   bottom: 33%;
   left: 10%;
-  border: 1.5px solid var(--cus-gray-100);
 }
 
 .liquid-number{
@@ -570,3 +569,89 @@ button{
   background: var(--cus-orange);
   color: white;
 }
+
+.manual-machine{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8%;
+
+}
+.manual-machine > img{
+  width: 100%;
+  height: 100%;
+}
+
+.manual-logo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manual-logo > button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-logo > button > img{
+  width: 45%;
+  height: 50%;
+}
+
+.circle-button-left,.circle-button-right{
+  position: absolute;
+  top: 8%;
+  left: 7%;
+}
+.circle-button-right{
+  left: auto;
+  right: 7%;
+}
+.circle-button-left > button,.circle-button-right > button{
+  background: var(--cus-gray-20);
+  margin-bottom: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-button-left > button:hover,.circle-button-right > button:hover{
+  background: var(--cus-orange);
+  color: white;
+}
+
+.circle-button-left > button.active,.circle-button-right > button.active{
+  background: var(--cus-orange);
+  color: white;
+}
+
+.left-drum,.right-drum{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.right-drum{
+  left: auto;
+  right: 20%;
+}
+
+.esquerda{
+  position: absolute;
+  width: 15%;
+  top: 8%;
+  bottom: 45%;
+  left: 14%;
+}
+
+/* .esquerda > div{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: var(--cus-blue);
+  transition: all 300ms linear;
+} */
