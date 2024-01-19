@@ -14,6 +14,11 @@
 .font-bigger {
     font-size: calc(var(--ratio) * 1.3vw);
 }
+
+.font-medium-bigger{
+    font-size: calc(var(--ratio) * 1.35vw);
+}
+
 .font-ext-bigger {
     font-size: calc(var(--ratio) * 2vw);
 }
@@ -22,6 +27,9 @@
     padding: calc((20px * var(--page-wide)))
 }
 
+.w-11{
+    width: calc((11px * var(--page-wide)));
+}
 .w-14{
     width: calc((14px * var(--page-wide)));
 }
@@ -68,6 +76,13 @@
     width: calc((365px * var(--page-wide)));
 }
 
+.min-w-164{
+    width: calc((164px * var(--page-wide)));
+}
+
+.h-11{
+    height: calc((11px * var(--page-wide)));
+}
 .h-14{
     height: calc((14px * var(--page-wide)));
 }
@@ -88,6 +103,14 @@
 }
 .h-56{
     height: calc((56px * var(--page-wide)));
+}
+
+.table-row-height{
+    height: calc((56.875px * var(--page-wide)));
+}
+
+.table-header-height{
+    height: calc((67px * var(--page-wide)));
 }
 .h-90{
     height: calc((90px * var(--page-wide)));
@@ -114,8 +137,15 @@
 .rad-20{
     border-radius : calc((20px * var(--page-wide)))
 }
+.rad-15{
+    border-radius : calc((15px * var(--page-wide)))
+}
 .rad-6{
     border-radius : calc((6px * var(--page-wide)))
+}
+.pad-y-12{
+  padding-top: calc((12px * var(--page-wide)));
+  padding-bottom: calc((12px * var(--page-wide)));
 }
 .pad-y-8{
   padding-top: calc((8px * var(--page-wide)));
@@ -148,12 +178,26 @@
 .mar-r-18{
   margin-right: calc((18px * var(--page-wide)));
 }
+.mar-r-12{
+  margin-right: calc((12px * var(--page-wide)));
+}
+.mar-t-18{
+  margin-top: calc((18px * var(--page-wide)));
+}
 .pad-r-14{
   padding-right: calc((14px * var(--page-wide)));
 }
 .pad-r-10{
   padding-right: calc((10px * var(--page-wide)));
 }
+
+.pad-r-5{
+  padding-right: calc((5px * var(--page-wide)));
+}
+.pad-l-5{
+  padding-left: calc((5px * var(--page-wide)));
+}
+
 .pad-r-22{
   padding-right: calc((22px * var(--page-wide)));
 }
@@ -170,6 +214,10 @@
 .pad-x-12{
     padding-left: calc((12px * var(--page-wide)));
     padding-right: calc((12px * var(--page-wide)));
+}
+.pad-x-6{
+    padding-left: calc((6px * var(--page-wide)));
+    padding-right: calc((6px * var(--page-wide)));
 }
 .pad-x-20{
     padding-left: calc((20px * var(--page-wide)));
