@@ -1,6 +1,11 @@
 .font-sm {
     font-size: calc(var(--ratio) * 0.8vw);
 }
+
+.font-22{
+    font-size: calc(var(--ratio) * 0.95vw);
+}
+
 .font-normal {
     font-size: calc(var(--ratio) * 0.9vw);
 }
@@ -8,7 +13,7 @@
     font-size: calc(var(--ratio) * 1vw);
 }
 
-.font-big {
+.font-big{
     font-size: calc(var(--ratio) * 1.2vw);
 }
 .font-bigger {
@@ -66,6 +71,12 @@
 .w-124{
     width: calc((124px * var(--page-wide)));
 }
+.min-w-133{
+    min-width: calc((133px * var(--page-wide)));
+}
+.min-w-145{
+    min-width: calc((150px * var(--page-wide)));
+}
 .w-153{
     width: calc((153px * var(--page-wide)));
 }
@@ -104,7 +115,15 @@
 .h-56{
     height: calc((56px * var(--page-wide)));
 }
-
+.h-78{
+    height: calc((78px * var(--page-wide)));
+}
+.h-100{
+    height: calc((100px * var(--page-wide)));
+}
+.h-193{
+    height: calc((193px * var(--page-wide)));
+}
 .table-row-height{
     height: calc((56.875px * var(--page-wide)));
 }
@@ -158,6 +177,10 @@
 .pad-y-4{
   padding-top: calc((4px * var(--page-wide)));
   padding-bottom: calc((4px * var(--page-wide)));
+}
+.pad-y-2{
+  padding-top: calc((2px * var(--page-wide)));
+  padding-bottom: calc((2px * var(--page-wide)));
 }
 .pad-x-24{
   padding-left: calc((24px * var(--page-wide)));
@@ -227,9 +250,42 @@
     margin-top: calc((30px * var(--page-wide)))
 }
 
+.pad-t-16{
+    padding-top: calc((16px * var(--page-wide)))
+}
+
 .cus-border-3{
     border: calc((3px * var(--page-wide))) solid var(--cus-gray-100);
 }
 .cus-border-1{
     border: calc((1.5px * var(--page-wide))) solid var(--cus-gray-100);
+}
+
+.gap-24{
+    gap: calc((24px * var(--page-wide))) !important;
+}
+.cus-border{
+    border: calc((1px * var(--page-wide))) solid var(--cus-gray-100);
+}
+
+  .border-cus-green{
+    border: calc((1px * var(--page-wide))) solid var(--cus-green)
+  }
+
+.border-b-gray{
+  border-bottom: calc((1px * var(--page-wide))) solid var(--cus-gray-30)
+}
+.border-t-gray{
+  border-top: calc((1px * var(--page-wide))) solid var(--cus-gray-30)
+}
+
+.border-r-gray{
+  border-right: calc((1px * var(--page-wide))) solid var(--cus-gray-30)
+}
+
+.border-r-black{
+  border-right: calc((1px * var(--page-wide))) solid var(--cus-black-100)
+}
+.border-black{
+    border: calc((1px * var(--page-wide))) solid black;
 }

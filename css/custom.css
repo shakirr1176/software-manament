@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--dark-black);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: var(--dark-black);
+    line-height: 1.5;
+}
+
+label {
+    display: inline-block;
+}
+
+button {
+    border-radius: 0;
+}
+
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-light {
+    font-weight: lighter;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-50per {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.rounded-pill {
+    border-radius: 100vw;
+}

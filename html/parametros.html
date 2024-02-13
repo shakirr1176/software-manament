@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style id="extra-style"></style>
+  <script src="../js/style.js"></script>
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body class="overflow-hidden">
+
+  <div class="fit-screen" style="position: relative;">
+    <div class="my-box" style="inset: 0; position:absolute;">
+
+      <button class="position-absolute text-uppercase font-big rad-20 pad-20 maquina-btn">
+        máquina
+      </button>
+      <button class="position-absolute text-uppercase font-big rad-20 pad-20 alarmes-btn">
+        alarmes
+      </button>
+
+      <div class="position-absolute overflow-hidden header-grid-3">
+        <button class="rad-20 menu w-full h-full">
+          <svg class="w-45" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <span class="text-capitalize font-big">menu</span>
+        </button>
+      </div>
+
+      <div class="position-absolute overflow-hidden parametros-grid-1">
+        <div class="grid-box rad-20 d-flex overflow-hidden">
+          <button class="parametros-tab flex-1 active text-start font-normal pad-x-20 pad-y-12">
+            <span class="mar-r-12">
+              <svg class="w-30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+            </span>
+            <span>
+              Configuração
+            </span>
+          </button>
+          <button class="parametros-tab flex-1 text-start font-22 pad-x-20 pad-y-12">
+            <span class="mar-r-12">
+              <svg class="h-30 w-14" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3333 19.7622V4.40883C10.3333 3.50476 9.98214 2.6377 9.35702 1.99842C8.7319 1.35914 7.88406 1 7 1C6.11595 1 5.2681 1.35914 4.64298 1.99842C4.01786 2.6377 3.66667 3.50476 3.66667 4.40883V19.7622C2.59637 20.4935 1.78443 21.5575 1.35076 22.7969C0.917095 24.0363 0.884693 25.3855 1.25834 26.6452C1.63199 27.9049 2.39188 29.0083 3.42578 29.7925C4.45968 30.5767 5.71278 31 7 31C8.28722 31 9.54032 30.5767 10.5742 29.7925C11.6081 29.0083 12.368 27.9049 12.7417 26.6452C13.1153 25.3855 13.0829 24.0363 12.6492 22.7969C12.2156 21.5575 11.4036 20.4935 10.3333 19.7622Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span>
+              Temperatura
+            </span>
+          </button>
+          <button class="parametros-tab flex-1 text-start font-22 pad-x-20 pad-y-12">
+            <span class="mar-r-12">
+              <svg class="h-30 w-14" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3333 19.7622V4.40883C10.3333 3.50476 9.98214 2.6377 9.35702 1.99842C8.7319 1.35914 7.88406 1 7 1C6.11595 1 5.2681 1.35914 4.64298 1.99842C4.01786 2.6377 3.66667 3.50476 3.66667 4.40883V19.7622C2.59637 20.4935 1.78443 21.5575 1.35076 22.7969C0.917095 24.0363 0.884693 25.3855 1.25834 26.6452C1.63199 27.9049 2.39188 29.0083 3.42578 29.7925C4.45968 30.5767 5.71278 31 7 31C8.28722 31 9.54032 30.5767 10.5742 29.7925C11.6081 29.0083 12.368 27.9049 12.7417 26.6452C13.1153 25.3855 13.0829 24.0363 12.6492 22.7969C12.2156 21.5575 11.4036 20.4935 10.3333 19.7622Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span>
+              Água
+            </span>
+          </button>
+          <button class="parametros-tab flex-1 text-start font-22 pad-x-20 pad-y-12">
+            <span class="mar-r-12">
+              <svg class="w-30 h-30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+              </svg>
+            </span>
+            <span>
+              Tempos
+            </span>
+          </button>
+          <button class="parametros-tab flex-1 text-start font-22 pad-x-20 pad-y-12">
+            <span class="mar-r-12">
+              <svg class="w-30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.0036 27.2979L22.0037 27.2979C22.4665 27.7037 23.0802 27.9286 23.7319 27.9286C24.4466 27.9286 25.1241 27.6516 25.5985 27.1772L32.8824 19.8915L32.8824 19.8914L32.8945 19.8793L32.8945 19.8793C33.8526 18.921 33.9099 17.3106 33.0153 16.2896L33.0152 16.2895L27.0741 9.49882C25.7551 10.6232 23.7728 11.545 21.4301 12.0089L21.4299 12.009C20.4319 12.205 19.4206 12.3093 18.4632 12.3093C18.1762 12.3093 17.8937 12.3032 17.6164 12.2847M22.0036 27.2979L17.6255 12.135M22.0036 27.2979L8.85037 15.7806L22.0036 27.2979ZM17.6164 12.2847C17.6161 12.2847 17.6158 12.2847 17.6155 12.2847L17.6255 12.135M17.6164 12.2847C17.6167 12.2847 17.617 12.2848 17.6173 12.2848L17.6255 12.135M17.6164 12.2847C17.1991 12.2614 16.8818 11.898 16.9113 11.4819M17.6255 12.135C17.2917 12.1168 17.0367 11.8254 17.061 11.4914M16.9113 11.4819C16.9113 11.4824 16.9113 11.4828 16.9112 11.4833L17.061 11.4914M16.9113 11.4819C16.9113 11.4815 16.9114 11.481 16.9114 11.4806L17.061 11.4914M16.9113 11.4819C16.9352 11.0572 17.3045 10.7695 17.7072 10.7768L17.7145 10.7769L17.7145 10.7771C18.7805 10.849 19.9629 10.7652 21.1286 10.5308L21.1294 10.5306C23.295 10.1067 25.0029 9.26942 26.0691 8.36818L21.4884 3.1327L21.4883 3.1326C21.0546 2.63591 20.464 2.36429 19.8289 2.36429C19.2508 2.36429 18.6938 2.59651 18.2658 3.02459C18.2658 3.0246 18.2658 3.02461 18.2657 3.02462L8.74271 12.5561C8.74261 12.5562 8.74251 12.5563 8.74241 12.5564C8.29604 13.0088 8.05913 13.5885 8.08175 14.1937C8.10442 14.8005 8.37614 15.3633 8.85011 15.7804L17.061 11.4914M23.4625 2.78711L23.4625 2.78679H23.4526C23.3747 2.78679 23.299 2.79663 23.2262 2.8166L22.6372 2.14018C21.9233 1.31874 20.905 0.85 19.835 0.85C18.8473 0.85 17.9111 1.24293 17.1977 1.95645L7.67402 11.4825C6.92914 12.2276 6.53629 13.2085 6.56793 14.2403L6.56797 14.2412C6.60594 15.273 7.06203 16.2221 7.85095 16.9165L7.85127 16.9168L21.0109 28.4343L21.011 28.4344C21.7552 29.0842 22.7192 29.4429 23.7379 29.4429C24.8444 29.4429 25.915 29.0092 26.6726 28.2514L33.9565 20.9657C35.469 19.4528 35.5571 16.9165 34.1454 15.3027L28.1055 8.39823C28.6622 7.60861 28.9269 6.75801 28.7592 5.91315C28.5848 5.02776 27.973 4.29157 27.0548 3.7566C26.1372 3.222 24.9051 2.88229 23.4625 2.78711ZM27.2691 6.20171L27.2692 6.20227C27.3285 6.49857 27.2602 6.83559 27.0638 7.20396L24.675 4.47401C25.3534 4.61747 25.9247 4.83093 26.3588 5.09506C26.8811 5.41289 27.1891 5.79378 27.2691 6.20171ZM5.779 19.2368H5.7936L1 29.4264C1 32.4986 3.50081 35 6.57219 35C9.64357 35 12.1444 32.4986 12.1444 29.4264C12.1444 24.8486 7.23381 19.3175 7.02136 19.0868L7.1326 18.9862C7.13245 18.986 7.13231 18.9858 7.13216 18.9857C6.84184 18.6653 6.29576 18.6655 6.0057 18.9862L5.779 19.2368ZM6.57219 33.6357C4.25138 33.6357 2.36398 31.7479 2.36398 29.4264C2.36398 27.7912 3.13803 25.9374 4.07493 24.2968C4.95132 22.7622 5.95929 21.4328 6.57218 20.6727C7.18503 21.4329 8.19302 22.7638 9.06944 24.2991C10.0064 25.9405 10.7804 27.7942 10.7804 29.4264C10.7804 31.7479 8.893 33.6357 6.57219 33.6357Z"
+                  fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+              </svg>
+            </span>
+            <span>
+              Cozinhas
+            </span>
+          </button>
+          <button class="parametros-tab flex-1 text-start font-22 pad-x-20 pad-y-12">
+            <span class="mar-r-12">
+              <svg class="w-30" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_149_1482)">
+                  <path
+                    d="M4.20016 0H15.7108C16.1449 0 16.4966 0.351373 16.4966 0.784336V4.54977C16.4966 4.98273 16.1449 5.33372 15.7108 5.33372H13.8523V11.3921L19.6016 26.0124C20.7356 28.8954 18.6149 32 15.5122 32H4.39912C1.29599 32 -0.823906 28.8954 0.309304 26.0124L6.05864 11.3917V5.33372H4.20016C3.766 5.33372 3.41435 4.98273 3.41435 4.54977V0.784336C3.41435 0.351373 3.766 0 4.20016 0ZM7.72163 27.6811C6.68829 27.6811 6.68829 26.1129 7.72163 26.1129H12.1893C13.2227 26.1129 13.2227 27.6811 12.1893 27.6811H7.72163ZM7.72163 23.664C6.68829 23.664 6.68829 22.0953 7.72163 22.0953H12.1893C13.2227 22.0953 13.2227 23.664 12.1893 23.664H7.72163ZM7.72163 19.6465C6.68829 19.6465 6.68829 18.0782 7.72163 18.0782H12.1893C13.2227 18.0782 13.2227 19.6465 12.1893 19.6465H7.72163ZM18.1407 26.5824L12.3543 11.8682C12.3073 11.7674 12.2807 11.655 12.2807 11.5364V5.3341H7.63025L7.62909 11.5364C7.62909 11.6311 7.61174 11.7277 7.57511 11.8212L1.77025 26.5824C1.03188 28.4601 2.42188 30.4313 4.39912 30.4313H15.5122C17.5145 30.4313 18.8725 28.4432 18.1407 26.5824ZM14.925 1.56867H4.98597V3.76543H14.925V1.56867Z"
+                    fill="currentColor" />
+                </g>
+              </svg>
+            </span>
+            <span>
+              Curvas de dosagem
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="position-absolute overflow-hidden parametros-grid-2">
+        <div class="grid-box d-flex flex-column rad-20 overflow-hidden">
+          <div class="d-flex align gap-24 text-capitalize border-b-gray">
+            <div class="w-50per pad-20 border-r-gray">
+              <div class="d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Arrefec.: dif. real desejada</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+            </div>
+            <div class="w-50per pad-20">
+              <div class="d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Arrefec.: dif. real desejada</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 d-flex align-items-center">
+            <div class="w-50per d-flex h-fit">
+              <div style="width: 45%;">
+                <div style="width: 54%;" class="mx-auto">
+                  <div class="w-full d-flex justify-content-between align-items-center">
+                    <span class="text-white font-ext-bigger fw-semibold">1</span>
+                    <div>
+                      <div class="w-11 h-11 dot inactive cus-orange-bg"></div>
+                      <div class="w-11 h-11 dot inactive mar-t-8 cus-green-bg"></div>
+                    </div>
+                  </div>
+
+                  <div class="position-relative pad-b-12">
+                    <svg class="w-full h-193" viewBox="0 0 98 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M90.8 153.94H7.06003C4.26003 153.94 2 151.04 2 147.45V1.87988H95.86V147.45C95.86 151.03 93.59 153.94 90.8 153.94Z"
+                        stroke="#838F9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M65.1597 153.94H32.6797V163.27H65.1597V153.94Z" stroke="#838F9B" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M65.1792 163.27H32.6992L35.0392 169.88C35.7292 170.85 36.6292 171.39 37.5692 171.39H60.3192C61.2592 171.39 62.1592 170.85 62.8492 169.88L65.1892 163.27H65.1792Z"
+                        stroke="#838F9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="esquerda h-100 cus-border-3 overflow-hidden">
+                      <div style="height: 20%;"></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-fit mx-auto mar-t-30 text-center font-big dark-black-bg pad-x-24 pad-y-8 rad-20 fw-semibold cus-white-90-text">
+                    <span>30</span>
+                  </div>
+                </div>
+              </div>
+              <div class="w-50per pad-x-24">
+                <div class="text-center pad-t-16">
+                  <p class="font-sm cus-white-90-text pad-r-5 pad-b-12">Calibrar Balseiro 1 (B)</p>
+                  <div
+                    class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                    0</div>
+                </div>
+                <div class="text-center mar-t-30">
+                  <p class="font-sm cus-white-90-text pad-r-5 pad-b-12">Calibrar Balseiro 1 (B)</p>
+                  <div
+                    class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                    0</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-50per d-flex h-fit">
+              <div style="width: 45%;">
+                <div style="width: 54%;" class="mx-auto">
+                  <div class="w-full d-flex justify-content-between align-items-center">
+                    <span class="text-white font-ext-bigger fw-semibold">2</span>
+                    <div>
+                      <div class="w-11 h-11 dot cus-orange-bg"></div>
+                      <div class="w-11 h-11 dot mar-t-8 cus-green-bg"></div>
+                    </div>
+                  </div>
+
+                  <div class="position-relative pad-b-12">
+                    <svg class="w-full h-193" viewBox="0 0 98 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M90.8 153.94H7.06003C4.26003 153.94 2 151.04 2 147.45V1.87988H95.86V147.45C95.86 151.03 93.59 153.94 90.8 153.94Z"
+                        stroke="#838F9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M65.1597 153.94H32.6797V163.27H65.1597V153.94Z" stroke="#838F9B" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M65.1792 163.27H32.6992L35.0392 169.88C35.7292 170.85 36.6292 171.39 37.5692 171.39H60.3192C61.2592 171.39 62.1592 170.85 62.8492 169.88L65.1892 163.27H65.1792Z"
+                        stroke="#838F9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="esquerda h-100 cus-border-3 overflow-hidden">
+                      <div style="height: 20%;"></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-fit mx-auto mar-t-30 text-center font-big dark-black-bg pad-x-24 pad-y-8 rad-20 fw-semibold cus-white-90-text">
+                    <span>30</span>
+                  </div>
+                </div>
+              </div>
+              <div class="w-50per pad-x-24">
+                <div class="text-center pad-t-16">
+                  <p class="font-sm cus-white-90-text pad-r-5 pad-b-12">Calibrar Balseiro 1 (B)</p>
+                  <div
+                    class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                    0</div>
+                </div>
+                <div class="text-center mar-t-30">
+                  <p class="font-sm cus-white-90-text pad-r-5 pad-b-12">Calibrar Balseiro 2 (M)</p>
+                  <div
+                    class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                    0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align gap-24 text-capitalize border-t-gray">
+            <div class="w-50per pad-20 border-r-gray">
+              <div class="d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Factor de dosagem B1</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+            </div>
+            <div class="w-50per pad-20">
+              <div class="d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Factor de dosagem B2</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute overflow-hidden parametros-grid-3">
+        <div class="rad-20 pad-20 grid-box">
+          <div class="d-flex gap-24 text-capitalize">
+            <div class="w-50per">
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">qtd. tubeiras</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Pressão</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Descrompressão</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Velocidade - Fator</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Velocidade atrás em %</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Velocidade pré-centrifugar</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Lavagem por cima</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">eloc. bomba circ. %</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">eloc. bomba circ. %</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+            </div>
+            <div class="w-50per">
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Arrefec.: dif. real desejada</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Vapor.: dif. real desejada</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Dosagem.: dif. real desejada</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Qtd. máx. água centrifugaç</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Desvio tempo veloc. tubo</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Procurar iman</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Control. tempo ciclo</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Desligar sirene</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+              <div class="pad-b-12 d-flex align-items-center">
+                <p class="flex-1 font-sm cus-white-90-text pad-r-5">Desligar sirene</p>
+                <div
+                  class="min-w-133 font-big d-block dark-black-bg pad-x-12 pad-y-8 rad-20 fw-semibold cus-white-90-text text-center">
+                  0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-absolute overflow-hidden pardidas-grid-4">
+        <div
+          class="rad-20 grid-box d-flex flex-column align-items-center justify-content-center cus-blue-bg text-white h-full">
+          <img class="aspect-square w-45" src="../assets/images/play-btn-with-circle.svg" alt="">
+          <p class="pad-x-6 text-white mar-t-8 font-medium">Automático</p>
+        </div>
+      </div>
+
+      <div class="position-absolute overflow-hidden pardidas-grid-5">
+        <div
+          class="rad-20 grid-box d-flex flex-column align-items-center justify-content-center cus-blue-bg text-white h-full">
+          <img class="aspect-square w-45" src="../assets/images/manual.svg" alt="">
+          <p class="pad-x-6 text-white mar-t-8 font-medium">Manual</p>
+        </div>
+      </div>
+
+
+      <div class="position-absolute bg-black overflow-hidden footer border-t-gray">
+      </div>
+
+      <div class="position-absolute bg-black footer-grid border-t-gray">
+        <div class="d-flex h-full">
+          <div class="d-flex">
+            <div class="d-flex">
+              <div class="d-flex align-items-center justify-content-between border-r-gray">
+                <img class="w-153" src="../assets/images/logo.png" alt="">
+                <span class="font-sm pad-x-40 cus-white-90-text">VERSÃO 01.1</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="pad-x-40 d-flex align-items-center justify-content-between border-r-gray">
+                <svg class="text-white w-40 h-40 mar-r-18" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span class="font-sm cus-white-90-text font-ext-bigger fw-bold">14:33</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="pad-x-40 d-flex align-items-center justify-content-between border-r-gray">
+                <svg class="text-white w-40 h-40 mar-r-18" viewBox="0 0 31 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M26 5H5C3.34315 5 2 6.34315 2 8V29C2 30.6569 3.34315 32 5 32H26C27.6569 32 29 30.6569 29 29V8C29 6.34315 27.6569 5 26 5Z"
+                    stroke="#E6E6E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M21.5 2V8" stroke="#E6E6E6" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M9.5 2V8" stroke="#E6E6E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M2 14H29" stroke="#E6E6E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="font-sm cus-white-90-text font-ext-bigger fw-bold">08 Out</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center
+              justify-content-between flex-1">
+            <div class="pad-x-24">
+              <button class="cus-gray-50-text text-uppercase d-flex align-items-center pad-20 cus-black-100-bg rad-20">
+                <span class="d-flex font-big">parâmetros</span>
+              </button>
+            </div>
+            <button
+              class="play play-pause-btn min-w-145 cus-pink-bg text-uppercase d-flex align-items-center h-78 cus-black-100-bg rad-20">
+              <svg class="icon text-white w-45 h-45" version="1.1" viewBox="0 0 36 36" fill="currentColor">
+                <path d=""></path>
+              </svg>
+              <span class="text d-flex font-big text-white fw-bold"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- main end -->
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
