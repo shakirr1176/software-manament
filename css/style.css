@@ -1,6 +1,9 @@
 :root {
   --cus-orange: #FF7427;
-  --cus-blue: #416AFF;
+  --cus-orange-light: #FF8E50;
+  --cus-blue: #1447ff;
+  --cus-blue-light: #416AFF;
+  --cus-blue-deep: rgb(18, 56, 192);
   --cus-green: #00FF19;
   --dark-black: #1B1B1B;
   --cus-black-100: #1B1B1B;
@@ -32,6 +35,63 @@
   --value-7: calc(100% - (7 * 100% / var(--bar-col)));
 }
 
+a{
+  text-decoration: none;
+}
+
+button{
+  background: transparent;
+}
+
+.home-grid{
+  background: var(--cus-blue-light);
+  width: calc((286 / var(--isw)) * 100%);
+  height: calc((286 / var(--ish)) * 100%);
+  position: absolute;
+  color: white;
+  transition: background 300ms linear;
+}
+
+.home-grid:hover{
+  background: var(--cus-blue);
+}
+
+.home-grid > .logo,.home-grid > .grid-text{
+ position: absolute;
+ left: 50%;
+ top: 30%;
+ transform: translateX(-50%);
+}
+
+.home-grid > .grid-text{
+ top: auto;
+ bottom: 12%;
+}
+
+.home-grid-1,.home-grid-2,.home-grid-3,.home-grid-4,.home-grid-5 {
+  top: calc((231 / var(--ish)) * 100%);
+}
+
+.home-grid-6,.home-grid-7,.home-grid-8,.home-grid-9,.home-grid-10{
+  top: calc((537 / var(--ish)) * 100%);
+}
+
+.home-grid-1,.home-grid-6{
+  left: calc((203 / var(--isw)) * 100%);
+}
+.home-grid-2,.home-grid-7{
+  left: calc((510 / var(--isw)) * 100%);
+}
+.home-grid-3,.home-grid-8{
+  left: calc((818 / var(--isw)) * 100%);
+}
+.home-grid-4, .home-grid-9{
+  left: calc((1124 / var(--isw)) * 100%);
+}
+.home-grid-5,.home-grid-10{
+  left: calc((1430 / var(--isw)) * 100%);
+}
+
 .footer {
   width: 100vw;
   height: calc((120 / var(--ish)) * 100%);
@@ -40,10 +100,26 @@
   transform: translateX(-50%);
 }
 
+.home-header {
+  width: 100vw;
+  height: calc((120 / var(--ish)) * 100%);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .footer-grid {
   width: calc((1820 / var(--isw)) * 100%);
   height: calc((120 / var(--ish)) * 100%);
   top: calc((960 / var(--ish)) * 100%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-page-header-grid {
+  width: calc((1820 / var(--isw)) * 100%);
+  height: calc((120 / var(--ish)) * 100%);
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -359,9 +435,15 @@ button {
 .cus-orange-bg {
   background-color: var(--cus-orange)
 }
+.cus-orange-light {
+  background-color: var(--cus-orange-light)
+}
 
 .cus-blue-bg {
   background-color: var(--cus-blue)
+}
+.cus-blue-light-bg {
+  background-color: var(--cus-blue-light)
 }
 
 .cus-green-bg {
@@ -651,6 +733,7 @@ button {
   align-items: center;
   justify-content: center;
   transition: all 300ms;
+  color: var(--cus-black-80);
 }
 
 .menu:hover {
@@ -760,14 +843,25 @@ button {
   display: block;
 }
 
-.litro-nivel:hover {
-  background: var(--cus-orange);
-  color: white;
-}
-
-.litro-nivel.active {
-  background: var(--cus-orange);
-  color: white;
+.circle-button-left>button.active,
+.circle-button-right>button.active,
+.grid-9-circle-button>button.active,
+.circle-button-left>button:hover,
+.circle-button-right>button:hover,
+.grid-9-circle-button>button:hover,
+.manual-circle-button.active,
+.manual-circle-button:hover,
+.manual-left-button.active,
+.manual-left-button:hover,
+.litro-nivel.active,
+.litro-nivel:hover,
+.balseiros-right-button.active,
+.balseiros-right-button:hover,
+.balseiros-left-button.active,
+.balseiros-left-button:hover
+ {
+  background: var(--cus-orange) !important;
+  color: white !important;
 }
 
 .manual-machine {
@@ -832,20 +926,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.circle-button-left>button:hover,
-.circle-button-right>button:hover,
-.grid-9-circle-button>button:hover {
-  background: var(--cus-orange);
-  color: white;
-}
-
-.circle-button-left>button.active,
-.circle-button-right>button.active,
-.grid-9-circle-button>button.active {
-  background: var(--cus-orange);
-  color: white;
 }
 
 .left-drum,
@@ -933,3 +1013,14 @@ button {
     opacity: 1;
   }
 }
+
+.icon-elmnt{
+  transition: background 300ms linear;
+}
+
+.reiniciar:hover .icon-elmnt{
+  background: var(--cus-orange);
+} 
+.sair:hover .icon-elmnt{
+  background: var(--cus-blue);
+} 

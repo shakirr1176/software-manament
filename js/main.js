@@ -1,9 +1,3 @@
-let litroNivel = document.querySelectorAll('.litro-nivel')
-
-let litroNivelActive = [...litroNivel].filter(el=>el.classList.contains('active'))[0]
-
-activeBtn(litroNivel,litroNivelActive)
-
 function activeBtn(btn,active){
     let prev;
 
@@ -27,6 +21,12 @@ function activeBtn(btn,active){
     })
 }
 
+let litroNivel = document.querySelectorAll('.litro-nivel')
+
+let litroNivelActive = [...litroNivel].filter(el=>el.classList.contains('active'))[0]
+
+activeBtn(litroNivel,litroNivelActive)
+
 let circleIcon = document.querySelectorAll('.circle-icon')
 let circleIconActive = [...circleIcon].filter(el=>el.classList.contains('active'))[0]
 
@@ -38,13 +38,30 @@ let parametrosActive = [...parametrosTab].filter(el=>el.classList.contains('acti
 
 activeBtn(parametrosTab,parametrosActive)
 
+let manualLeftButtons = document.querySelectorAll('.manual-left-button')
+let manualLeftButtonsActive = [...manualLeftButtons].filter(el=>el.classList.contains('active'))[0]
+
+activeBtn(manualLeftButtons,manualLeftButtonsActive)
+
+let manualCircleButton = document.querySelectorAll('.manual-circle-button')
+let manualCircleButtonActive = [...manualCircleButton].filter(el=>el.classList.contains('active'))[0]
+
+activeBtn(manualCircleButton,manualCircleButtonActive)
+
+let balseirosRightButton = document.querySelectorAll('.balseiros-right-button')
+let balseirosRightButtonActive = [...balseirosRightButton].filter(el=>el.classList.contains('active'))[0]
+
+activeBtn(balseirosRightButton,balseirosRightButtonActive)
+
+let balseirosLeftButton = document.querySelectorAll('.balseiros-left-button')
+let balseirosLeftButtonActive = [...balseirosLeftButton].filter(el=>el.classList.contains('active'))[0]
+
+activeBtn(balseirosLeftButton,balseirosLeftButtonActive)
+
 
 let playPauseBtn = document.querySelector('.play-pause-btn')
 
 if(playPauseBtn){
-    // window.addEventListener('load',()=>{
-    // })
-    
     playPauseFunc(playPauseBtn)
     playPauseBtn?.addEventListener('click',()=>{
 
@@ -85,4 +102,8 @@ if(playPauseBtn){
             },150)
         }
     }
+}
+
+function goBack() {
+    window.history.back();
 }
