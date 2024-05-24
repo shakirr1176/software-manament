@@ -1,62 +1,62 @@
-function activeBtn(btn,active){
-    let prev;
+// function activeBtn(btn,active){
+//     let prev;
 
-    if(active){
-        prev = active
-    }
+//     if(active){
+//         prev = active
+//     }
 
-    btn?.forEach(el=>{
-        el.addEventListener('click',()=>{
-            if(prev){
-                prev.classList.remove('active')
-            }
+//     btn?.forEach(el=>{
+//         el.addEventListener('click',()=>{
+//             if(prev){
+//                 prev.classList.remove('active')
+//             }
 
-            if(prev != el){
-                el.classList.add('active')
-                prev = el
-            }else{
-                prev = undefined
-            }
-        })
-    })
-}
+//             if(prev != el){
+//                 el.classList.add('active')
+//                 prev = el
+//             }else{
+//                 prev = undefined
+//             }
+//         })
+//     })
+// }
 
-let litroNivel = document.querySelectorAll('.litro-nivel')
+// let litroNivel = document.querySelectorAll('.litro-nivel')
 
-let litroNivelActive = [...litroNivel].filter(el=>el.classList.contains('active'))[0]
+// let litroNivelActive = [...litroNivel].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(litroNivel,litroNivelActive)
+// activeBtn(litroNivel,litroNivelActive)
 
-let circleIcon = document.querySelectorAll('.circle-icon')
-let circleIconActive = [...circleIcon].filter(el=>el.classList.contains('active'))[0]
+// let circleIcon = document.querySelectorAll('.circle-icon')
+// let circleIconActive = [...circleIcon].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(circleIcon,circleIconActive)
+// activeBtn(circleIcon,circleIconActive)
 
 
-let parametrosTab = document.querySelectorAll('.parametros-tab')
-let parametrosActive = [...parametrosTab].filter(el=>el.classList.contains('active'))[0]
+// let parametrosTab = document.querySelectorAll('.parametros-tab')
+// let parametrosActive = [...parametrosTab].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(parametrosTab,parametrosActive)
+// activeBtn(parametrosTab,parametrosActive)
 
-let manualLeftButtons = document.querySelectorAll('.manual-left-button')
-let manualLeftButtonsActive = [...manualLeftButtons].filter(el=>el.classList.contains('active'))[0]
+// let manualLeftButtons = document.querySelectorAll('.manual-left-button')
+// let manualLeftButtonsActive = [...manualLeftButtons].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(manualLeftButtons,manualLeftButtonsActive)
+// activeBtn(manualLeftButtons,manualLeftButtonsActive)
 
-let manualCircleButton = document.querySelectorAll('.manual-circle-button')
-let manualCircleButtonActive = [...manualCircleButton].filter(el=>el.classList.contains('active'))[0]
+// let manualCircleButton = document.querySelectorAll('.manual-circle-button')
+// let manualCircleButtonActive = [...manualCircleButton].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(manualCircleButton,manualCircleButtonActive)
+// activeBtn(manualCircleButton,manualCircleButtonActive)
 
-let balseirosRightButton = document.querySelectorAll('.balseiros-right-button')
-let balseirosRightButtonActive = [...balseirosRightButton].filter(el=>el.classList.contains('active'))[0]
+// let balseirosRightButton = document.querySelectorAll('.balseiros-right-button')
+// let balseirosRightButtonActive = [...balseirosRightButton].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(balseirosRightButton,balseirosRightButtonActive)
+// activeBtn(balseirosRightButton,balseirosRightButtonActive)
 
-let balseirosLeftButton = document.querySelectorAll('.balseiros-left-button')
-let balseirosLeftButtonActive = [...balseirosLeftButton].filter(el=>el.classList.contains('active'))[0]
+// let balseirosLeftButton = document.querySelectorAll('.balseiros-left-button')
+// let balseirosLeftButtonActive = [...balseirosLeftButton].filter(el=>el.classList.contains('active'))[0]
 
-activeBtn(balseirosLeftButton,balseirosLeftButtonActive)
+// activeBtn(balseirosLeftButton,balseirosLeftButtonActive)
 
 
 let playPauseBtn = document.querySelector('.play-pause-btn')
@@ -104,6 +104,6 @@ if(playPauseBtn){
     }
 }
 
-function goBack() {
-    window.history.back();
-}
+// function goBack() {
+//     window.history.back();
+// }

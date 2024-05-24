@@ -262,6 +262,13 @@
     margin-top: calc((30px * var(--page-wide)))
 }
 
+.pad-18{
+    padding:  calc((18px * var(--page-wide)));
+}
+.pad-24{
+    padding:  calc((24px * var(--page-wide)));
+}
+
 .pad-t-16{
     padding-top: calc((16px * var(--page-wide)))
 }

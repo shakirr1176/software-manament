@@ -22,6 +22,9 @@ button {
     border-radius: 0;
 }
 
+button{
+    display: block;
+}
 
 button:focus:not(:focus-visible) {
     outline: 0;
@@ -161,6 +164,10 @@ table {
 
 .text-white {
     color: white;
+}
+
+.text-gray{
+    color: #77838F;
 }
 
 .overflow-scroll {

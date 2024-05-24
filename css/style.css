@@ -41,6 +41,7 @@ a{
 
 button{
   background: transparent;
+  display: block;
 }
 
 .home-grid{
@@ -395,8 +396,13 @@ html {
   background: var(--dark-black);
 }
 
+@font-face {
+  font-family: workSans;
+  src: url(../font/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: workSans;
   background: var(--dark-black);
 }
 
@@ -843,25 +849,20 @@ button {
   display: block;
 }
 
-.circle-button-left>button.active,
-.circle-button-right>button.active,
-.grid-9-circle-button>button.active,
-.circle-button-left>button:hover,
-.circle-button-right>button:hover,
-.grid-9-circle-button>button:hover,
-.manual-circle-button.active,
-.manual-circle-button:hover,
-.manual-left-button.active,
-.manual-left-button:hover,
-.litro-nivel.active,
-.litro-nivel:hover,
-.balseiros-right-button.active,
-.balseiros-right-button:hover,
-.balseiros-left-button.active,
-.balseiros-left-button:hover
+.bit.active,
+.bit:hover,
+.entry:hover
  {
   background: var(--cus-orange) !important;
   color: white !important;
+}
+
+.entry:hover{
+  border-color: var(--cus-orange);
+}
+
+.inactive{
+  opacity: .5;
 }
 
 .manual-machine {
